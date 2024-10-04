@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Figtree" ,'Segoe UI' ;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background-color: hsl(47, 88%, 63%);
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    transition: all 0.5s ease;
+
+    
+}
+
+main{
+    background-color: hsl(0, 0%, 100%);
+    max-width: 334px;
+    height: 490px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 25px 25px;
+    box-shadow: 8px 8px 0 hsl(0, 0%, 7%) ;
+}
+
+#main-container{
+    display: grid;
+    place-content: center;
+}
+
+.img{
+    margin-bottom: 20px;
+}
+
+.img img{
+    border-radius: 10px;
+}
+
+#meta-info .learning{
+    background: hsl(47, 88%, 63%);
+    display: inline-block;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.learning{
+    font-weight: 800;
+    font-size: 14px;
+    padding: 5px 11px;
+    color: hsl(0, 0%, 7%);
+}
+
+#meta-info .date{
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: hsl(0, 0%, 7%);
+}
+
+.main-info-title h2{
+    font-weight: 800;
+    font-size: 22px;
+    margin-bottom: 12px;
+    /* color: hsl(0, 0%, 7%); */
+}
+
+
+.main-info-title a{
+    text-decoration: none;
+    color: hsl(0, 0%, 7%);
+    transition: 0.5s ease;
+}
+
+.main-info-title:hover{
+    color: hsl(47, 88%, 63%);
+}
+
+.main-info-p{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    color: hsl(0, 0%, 42%);
+}
+
+#profile{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+#profile img{
+    width: 45px;
+    padding-right: 10px;
+}
+
+#profile h5{
+    font-weight: 850;
+    color: hsl(0, 0%, 7%);
+}
+
+.footer{
+    /* display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: fixed; */
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.footer a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    transition: all 0.5s ease;
+}
+
+.footer a:hover{
+    color: red;
+}
+
+@media only screen and (min-width: 1440px) {
+    main{
+        height: 460px;
+        box-shadow: 6px 6px 0 hsl(0, 0%, 7%);
+    }
+
+    .learning{
+        font-size: 12px;
+    }
+
+    #meta-info .learning{
+        margin-bottom: 12px;
+    }
+
+    .main-info-title h2{
+        font-size: 20px;
+    }
+
+    .main-info-p{
+        font-size: 14px;
+    }
+
+    #profile img{
+        width: 38px;
+    }
+
+    #profile h5{
+        font-size: 12px;
+    }
+
+    #profile{
+        margin-bottom: 0px;
+    }
+
+    .footer{
+        display: flex;
+        justify-content: center;
+    }
+}
